@@ -1,1 +1,5 @@
 # portable-env
+
+The portable development environment is intended to reduce complexity for development teams in an effort to standardize the execution and configuration that is needed locally to run, debug, test, and deploy code for your team. The portable development environment helps maintain multiple projects that teams are responsible for by managing the underlying tooling (and versioning of that tooling) that is ultimately used during the development process. This can include things like what version of Python is run when executing aws scripts, even when that version differs by project. 
+
+The aim of this project is that once a team has configured their portable environment, it can be shared across the team to provide a single starting point to get up and running from scratch, across platforms, without worry of any specific individual's setup or OS. 
