@@ -1,0 +1,17 @@
+{
+    "apt_dependencies": [
+      "curl",
+      "docker"
+    ],
+    "npm_dependencies": [
+      "request",
+      "express"
+    ],
+    "dpkg_dependencies": {
+      "java" : {
+        "url" : "https://corretto.aws/downloads/latest/amazon-corretto-11-x64-linux-jdk.deb",
+        "file" : "amazon-corretto-11-x64-linux-jdk.deb"
+      }
+    }
+  }
+  
