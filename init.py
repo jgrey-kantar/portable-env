@@ -18,6 +18,6 @@ else:
     print("Error: This script is not supported on this operating system.")
     exit(1)
 
-subprocess.run(["docker", "build", "-t", "portable_dev", "."])
-subprocess.run(["docker", "run", "--name", "portable_dev", "-it", "--detach", "portable_dev"])
+subprocess.run(["docker", "build", "-t", "portable_env", "."])
+subprocess.run(["docker", "run", "-d", "-p", "2222:22", "--name", "portable_env", "portable_env"])
 

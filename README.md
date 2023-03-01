@@ -11,12 +11,19 @@ The aim of this project is that once a team has configured their portable enviro
 1. The portable development environment can be started by running the provided python "init.py" file from your terminal. 
     `python3 init.py`
 2. The script should create and spin up a new docker container that you can start a terminal session using the following command: 
-    `docker exec -it portable_dev /bin/bash`
+    `docker exec -it portable_env /bin/bash`
 
 
 
 ---
 ### TODO:
+
+#### Priority 1:
+---
+1. Fix dpkg errors. 
+
+
+#### Priority 2:
 1. If the image is already built/running: Ask if user wants to change auto startup behavior (startup at login)
     - Also don't recreate the image every time unless user wants a fresh start (WARN THIS WILL RESET ALL FILES: WORK CAN BE LOST)
     - Add a "Are you sure" prompt before wiping everything out

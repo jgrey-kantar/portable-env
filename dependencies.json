@@ -1,17 +1,48 @@
 {
-    "apt_dependencies": [
-      "curl",
-      "docker"
-    ],
-    "npm_dependencies": [
-      "request",
-      "express"
-    ],
-    "dpkg_dependencies": {
-      "java" : {
-        "url" : "https://corretto.aws/downloads/latest/amazon-corretto-11-x64-linux-jdk.deb",
-        "file" : "amazon-corretto-11-x64-linux-jdk.deb"
-      }
+  "dependencies": [
+    {
+      "name": "Java",
+      "installer": "apt", 
+      "purpose": "Java is the primary coding language of the services we manage & support",
+      "versions": [
+        "java-11-amazon-corretto-jdk"
+      ]
+    },
+    {
+      "name": "python",
+      "installer": "pyenv",
+      "purpose": "Python is required to run devops python scripts, code testing, & AWS Lambda source code.",
+      "versions": [
+        "3.9.13",
+        "3.8.1",
+        "3.8.0",
+        "3.7.6",
+        "3.7.4"
+      ]
+    },
+    {
+      "name": "php",
+      "installer": "phpenv",
+      "purpose": "?",
+      "versions": [
+        "7.4.1", 
+        "7.4.0", 
+        "7.3.13",
+        "7.3.12"
+      ]
+    }, 
+    {
+      "name": "request",
+      "installer": "npm",
+      "purpose": "?",
+      "versions": []
+    },
+    {
+      "name": "express",
+      "installer": "npm",
+      "versions" : [],
+      "purpose": "?"
     }
-  }
+  ]
+}
   
